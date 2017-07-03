@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smartphone shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/webshop.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta charset="utf-8">
+
+	<title>Agenda</title>
+
+	<link rel="stylesheet" href="css/calendar.css" media="screen">
+
+	<style type="text/css">
+        .footer{margin-top:100px;text-align:center;color:#666;font:bold 14px Arial}
+        .footer a{color:#999;text-decoration:none}
+        #wrapper{padding: 50px 0 0 325px;}
+        #calendar{margin:25px auto; width: 370px;}</style>
+<meta name="robots" content="noindex,follow" />
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <h1>agenda</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="bestellijst.html" data-icon="shop">Bestellijst</a></li>
+                <li><a href="Index.html" data-icon="home">Home</a></li>
+                <li><a href="bestellen.html" data-icon="arrow-r">Bestellen</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>Welkom bij de agenda</p>
+
+<div id="calendar"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery-ui-datepicker.min.js"></script>
+<script>
+	$('#calendar').datepicker({
+		inline: true,
+		firstDay: 1,
+		showOtherMonths: true,
+		dayNamesMin: ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za']
+	});
+</script>
+
+    </div>
+
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="/JQuery/Webshop_Smartphones/agenda.html" data-icon="calendar">Agenda</a></li>
+                <li><a href="locatie.html" data-icon="location">Locatie</a></li>
+            </ul>
+        </div>
+        <h1>Tom & Dieko &copy; JQuery 2017</h1>
+    </div>
+</div>
+
+</body>
+</html>
